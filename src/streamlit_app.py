@@ -1,5 +1,5 @@
-import pandas as pd
 import streamlit as st
+import pandas as pd
 
 import model.grammar_module.structure_grammar as sg
 import model.regex_module.data_parser as dp
