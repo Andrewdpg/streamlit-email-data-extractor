@@ -7,25 +7,29 @@
 - [Andrés David Parra García](https://github.com/Andrewdpg) - A00395676
 
 **$Note_1$:** *In order to run the main program, run by command line: `streamlit run main.py` inside the src folder*
+
 **$Note_2$:** *In order to run python tests, run by command line: `pytest` inside the src folder*
 
 ## Index:
 
 **1. Documentation:**
 
-   1. Class diagram [VPP](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/Email_Parser.vpp) - [PDF](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/Email_parser.pdf)
-   2. Literature review [md](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/literature_review.md)
-   3. Poster [PDF](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/Poster.pdf) - [JPG](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/Poster.jpg) - [MIRO]()
-   4. Test documentation [md](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/docs/test_documentation.md)
+   1. Class diagram [VPP](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/Email_Parser.vpp) - [PDF](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/Email_parser.pdf)
+   2. Literature review [md](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/literature_review.md)
+   3. Poster [PDF](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/Poster.pdf) - [JPG](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/Poster.jpg) - [MIRO]()
+   4. Test documentation [md](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/docs/test_documentation.md)
 
 
 **2. Code:**
 
-   1. Automata module [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/model/automata_module) - [test](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/tests/test_automata.py)
-   2. Grammar module [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/model/grammar_module) - [test](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/tests/test_structure_grammar.py)
-   3. Regular Expressions module [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/model/regex_module) - [test](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/tests/test_regex_module.py)
-   4. Transducer module [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/model/transducers_module) - [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/tests/test_transducers.py)
-   5. User interface [src](https://github.com/Bloque-CED/tareaintegradora1-g1-g3-grupo-2/blob/main/src/main.py)
+   1. Automata module [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/model/automata_module) - [test](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/tests/test_automata.py)
+   2. Grammar module [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/model/grammar_module) - [test](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/tests/test_structure_grammar.py)
+   3. Regular Expressions module [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/model/regex_module) - [test](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/tests/test_regex_module.py)
+   4. Transducer module [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/model/transducers_module) - [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/tests/test_transducers.py)
+   5. User interface [src](https://github.com/Andrewdpg/streamlit-email-data-extractor/blob/main/src/main.py)
+
+3. DEployed at: [streamlit](https://app-email-data-extractor-fmsd2eon28ygrf4wdbgucs.streamlit.app/)
+
 
 ## Introduction
 
