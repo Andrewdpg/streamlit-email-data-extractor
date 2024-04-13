@@ -1,0 +1,147 @@
+Delivered-To: silemnabib@gmail.com
+Received: by 2002:a2e:b5dc:0:b0:2d6:8876:96aa with SMTP id g28csp897506ljn;
+        Sat, 13 Apr 2024 10:39:04 -0700 (PDT)
+X-Received: by 2002:a05:6512:3145:b0:516:d323:cbe2 with SMTP id s5-20020a056512314500b00516d323cbe2mr2691122lfi.6.1713029943889;
+        Sat, 13 Apr 2024 10:39:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1713029943; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CbZxFZJe/fTp/e+VR0f1Ght/ZEwhNC32/SHDL4ETpsTS7Q5gF1dDo8+yfYdyHSar8X
+         ME/34UWlxT1nMYITMHBW7GeGz+tVuaQXClCkupyvwiRvSeVwI4K0LxJcfIl+IXfcNcg3
+         9HOP6AndAFWMPb5Ko4cnCap9VIM8+9ec6wG2mN60eh6vSzombeV3GhW/LAt8SqaG5/76
+         DF2T+Dvirj0z8D0b3w2WQhusB7D4yX90O6uGtegrX94bC4CWlgWLqOSeabTb3/GEbuuL
+         wC3sBgXMlcK6FozeBvjnX6QxSXNY428ZuCXjEBlJVUxW0h7s0rbT6yUblcN5CqLYLVB7
+         8fEg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=DLS/zyICusVFHTKu3n+ehHil9ES1Bo2fWXzMnwlaN0w=;
+        fh=rm6tJr7aXX36OoJwiAPLr+DFZo1RWubyLj2QdDUdqjk=;
+        b=Ev4Aqqo+jpj95jSY0UFQWU7jcPhfERI50YHO1aEZ/HLrvXsvZie2PHxqMvD3sRCEN6
+         C22e8rvPw57t4TqYBbxz9c0eRwj0At82Uw/LcV7fOK4TpGL0qPIvDGXPnt4m10+xmCL7
+         Gr2k6YN2+E7gWqU7uyeOeUhS6JtUg2HZOmiLOouIBHZMfRB3nEb7FBO1vQG6Dt+s0sxI
+         EtIzj9MjI8Cyj64SzlKeq7izmYjWts2IgXMQCZBzEiXVBh/iI7tMj1L9/h9zIFIFfAFt
+         buI2/8gVkVO8rG69CJR4EixoKztS+76vjeJSSh+QUhkHzWjSQZxzGBpUnZUhW+EBwH8O
+         5niA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=lHCQvr+W;
+       spf=pass (google.com: domain of sof.sep07@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sof.sep07@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <sof.sep07@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id q4-20020a0565123a8400b00513d38a0690sor2292929lfu.17.2024.04.13.10.39.03
+        for <silemnabib@gmail.com>
+        (Google Transport Security);
+        Sat, 13 Apr 2024 10:39:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sof.sep07@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=lHCQvr+W;
+       spf=pass (google.com: domain of sof.sep07@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sof.sep07@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1713029943; x=1713634743; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=DLS/zyICusVFHTKu3n+ehHil9ES1Bo2fWXzMnwlaN0w=;
+        b=lHCQvr+Wf//tWhU199waq2NLxAV54GcEDE7CI/s+sfi7//Wh8t8SHzRI7Quh8AN/Xs
+         4uF6tGfrtYsQOc3kH4+51uRNErDFmZWAyVnBxjyiyRSIVRVGKjBY9yJA4IyNhgBAQlMn
+         dSEBL5SUKI5sq/nFOvNt8HOXBgmfARzvEQtygeratAdCxe9E0Md0IDodZJmrI++NMGs2
+         jTXjvVRlsRSlo8gPZmpKbmTbRU1Lp+ls4RxNXshmf/3PHCQJSONZCHw3/9dnnCvL7aZW
+         S4n/xA1n20LVCwBMNgFMwWCbL1bnK8UzQsSETHRJZ4n6yOzMniR/wg1rrmDEgBETCYmx
+         qQMw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1713029943; x=1713634743;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=DLS/zyICusVFHTKu3n+ehHil9ES1Bo2fWXzMnwlaN0w=;
+        b=ebCCLvFxWfPk7v+Ke9hZchXCza0HyhFcKq8QaOwJpEYKHV3Bs4Atrd5ptGCZP/Ko7j
+         wuO4zGVt6CQ8dkl/3NKYcYC6ESQQ+EyB8ry5zSS8hhEyn2mAipv7ALZsd6X1fzxLt4NK
+         Vo2BzPdV/LsXqis/SrktoDu1p/4EB4TkMCvjswC4wVBqWbFH5Vht6rVHXFEhq0Ahxzgp
+         QHcgLV2pnuYg2no7Abymid447J/b+/os7Ot+QIznwPCpK+tew4eRe1CGO9rR9i8zwoiN
+         eYV9BL3Hn4Vmr0e89rrMtPyRLja7xmP0tZcEAfUZGEYFfXeSlQWtSylqIjU1X2IDvM+f
+         ZcNw==
+X-Gm-Message-State: AOJu0YwynixNN+8ARDDISeacpkoGo8cD2Ly1Hhblqri4ea+OVzx0ZTua
+	UDlMZ/0niV9O1v40RllOUy4uy5YXZPz2JEqdaHVPiEeNW1UUMU0p38LCFmyjWRXweXyYu0Yyapp
+	3LdeBza5uenxohcTVMOmR6gYlLZDtOMWG
+X-Google-Smtp-Source: AGHT+IHj5aFSSeE8aGJuiXuykLg8QjTis9gZaajXL4SJLchHJXJLdtLz2HTyjLZCbTql15dXpfsRAJdgXPqZqeJ61/E=
+X-Received: by 2002:a05:6512:55b:b0:517:8594:2c00 with SMTP id
+ h27-20020a056512055b00b0051785942c00mr3257042lfl.22.1713029942992; Sat, 13
+ Apr 2024 10:39:02 -0700 (PDT)
+MIME-Version: 1.0
+From: Sofia Sepulveda <sof.sep07@gmail.com>
+Date: Sat, 13 Apr 2024 12:38:52 -0500
+Message-ID: <CANER1Mz7ZemmewDJEGTkhryCqdX13F2gbRLcRuDKBVSWomVcKA@mail.gmail.com>
+Subject: =?UTF-8?Q?Actualizaci=C3=B3n_del_Proyecto=3A_Avances_y_Pr=C3=B3ximos_Pas?=
+	=?UTF-8?Q?os?=
+To: =?UTF-8?B?U8mqyp/htIfhtI0=?= <silemnabib@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000003deab00615fddde8"
+
+--0000000000003deab00615fddde8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A1Hola Silem!
+
+Espero que est=C3=A9s bien. Quer=C3=ADa informarte sobre los =C3=BAltimos a=
+vances en
+nuestro proyecto y discutir los pr=C3=B3ximos pasos a seguir.
+
+Durante la =C3=BAltima semana, nuestro equipo ha estado trabajando arduamen=
+te en
+la fase de implementaci=C3=B3n. Me complace decir que hemos logrado complet=
+ar la
+mayor=C3=ADa de las tareas seg=C3=BAn lo programado. Hemos superado algunos
+obst=C3=A1culos menores y hemos ajustado nuestro plan para mantenernos en e=
+l
+camino hacia el =C3=A9xito.
+
+En cuanto a los pr=C3=B3ximos pasos, nos centraremos en la fase de pruebas =
+y
+ajustes finales. Esto incluir=C3=A1 una revisi=C3=B3n exhaustiva del trabaj=
+o
+realizado hasta ahora para garantizar que cumpla con todas las
+especificaciones y requisitos del cliente. Adem=C3=A1s, estaremos en una re=
+uni=C3=B3n
+preparando la documentaci=C3=B3n necesaria para la entrega final y la
+capacitaci=C3=B3n del personal, si es necesario.
+
+Por favor, mantente atento a futuras actualizaciones y aseg=C3=BArate de cu=
+mplir
+con cualquier tarea asignada que se te haya dado. Tu contribuci=C3=B3n al
+proyecto es invaluable y apreciamos tu arduo trabajo y dedicaci=C3=B3n.
+
+Si tienes alguna pregunta o inquietud, no dudes en comunicarte conmigo.
+Estoy aqu=C3=AD para ayudar en lo que necesites.
+
+=C2=A1Gracias por tu continua colaboraci=C3=B3n y esfuerzo!
+
+Saludos cordiales,
+Sofia Sepulveda
+L=C3=ADder de equipo
+Aristizabals S.A
+
+--0000000000003deab00615fddde8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">=C2=A1Hola Silem!<br><br>Espero que est=C3=A9s bien. Quer=
+=C3=ADa informarte sobre los =C3=BAltimos avances en nuestro proyecto y dis=
+cutir los pr=C3=B3ximos pasos a seguir.<br><br>Durante la =C3=BAltima seman=
+a, nuestro equipo ha estado trabajando arduamente en la fase de implementac=
+i=C3=B3n. Me complace decir que hemos logrado completar la mayor=C3=ADa de =
+las tareas seg=C3=BAn lo programado. Hemos superado algunos obst=C3=A1culos=
+ menores y hemos ajustado nuestro plan para mantenernos en el camino hacia =
+el =C3=A9xito.<br><br>En cuanto a los pr=C3=B3ximos pasos, nos centraremos =
+en la fase de pruebas y ajustes finales. Esto incluir=C3=A1 una revisi=C3=
+=B3n exhaustiva del trabajo realizado hasta ahora para garantizar que cumpl=
+a con todas las especificaciones y requisitos del cliente. Adem=C3=A1s, est=
+aremos en una reuni=C3=B3n preparando la documentaci=C3=B3n necesaria para =
+la entrega final y la capacitaci=C3=B3n del personal, si es necesario.<br><=
+br>Por favor, mantente atento a futuras actualizaciones y aseg=C3=BArate de=
+ cumplir con cualquier tarea asignada que se te haya dado. Tu contribuci=C3=
+=B3n al proyecto es invaluable y apreciamos tu arduo trabajo y dedicaci=C3=
+=B3n.<br><br>Si tienes alguna pregunta o inquietud, no dudes en comunicarte=
+ conmigo. Estoy aqu=C3=AD para ayudar en lo que necesites.<br><br>=C2=A1Gra=
+cias por tu continua colaboraci=C3=B3n y esfuerzo!<br><br>Saludos cordiales=
+,<br>Sofia Sepulveda<br>L=C3=ADder de equipo<br>Aristizabals S.A<br></div>
+
+--0000000000003deab00615fddde8--
