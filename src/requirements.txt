@@ -1,0 +1,8 @@
+pandas
+altair
+pandas
+streamlit
+pytest
+pyformlang
+lark
+re
